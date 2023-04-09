@@ -9,7 +9,7 @@ try {
     $action = $parts[1];
     $controller = $parts[0];
 
-    if(!isset($routes[$request])){
+    if (!isset($routes[$request])) {
         throw new Exception("route does not exist!");
     }
  
@@ -26,7 +26,6 @@ try {
     } catch (Exception $e) {
         echo $e->getMessage();
     }
-
 } catch (Exception $e) {
     $e->getMessage();
 }
